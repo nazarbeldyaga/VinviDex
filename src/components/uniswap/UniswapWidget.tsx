@@ -2,7 +2,7 @@
 
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import TOKEN_LIST from "../../data/uniswap-default.tokenlist.json";
-import "./widget.css"
+import './Widget.css'
 import { JSON_RPC_URL } from '@/constants'
 import dynamic from "next/dynamic"
 import { darkTheme } from "@uniswap/widgets";
