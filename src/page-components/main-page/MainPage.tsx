@@ -1,14 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 
 import "./MainPage.css";
-import TickerTape from "@/components/ticker/TickerTape";
-import News from "@/components/news/News";
+
+const TickerTape = dynamic(
+    () => import("@/components/ticker/TickerTape").then((mod) => mod.default),
+    {
+        ssr: true,
+        loading: () => <div>Loading Ticker...</div>
+    }
+);
+
+const News = dynamic(
+    () => import("@/components/news/News").then((mod) => mod.default),
+    {
+        ssr: true,
+        loading: () => <div>Loading News...</div>
+    }
+);
 
 const MainPage: React.FC = () => {
+    const [componentsLoaded, setComponentsLoaded] = useState({
+        ticker: false,
+        news: false
+    });
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setComponentsLoaded({
+                ticker: true,
+                news: true
+            });
+        }, 100);
+        
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <>
             <div className="ticker">
-                <TickerTape />
+                {componentsLoaded.ticker ? <TickerTape /> : <div>Loading Ticker...</div>}
             </div>
 
             <div className="slogan">
@@ -17,7 +48,7 @@ const MainPage: React.FC = () => {
             </div>
 
             <div className="news">
-                <News />
+                {componentsLoaded.news ? <News /> : <div>Loading News...</div>}
             </div>
         </>
     );
