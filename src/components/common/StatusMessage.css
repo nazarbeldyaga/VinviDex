@@ -1,0 +1,118 @@
+.status-message-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.status-message {
+  background-color: #1a1b23;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 480px;
+  display: flex;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid #2c2d3a;
+  animation: slideUp 0.3s ease-out;
+}
+
+.status-message-icon {
+  margin-right: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.status-message-content {
+  flex: 1;
+}
+
+.status-message-content h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.status-message-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #a0a0b0;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.status-message-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: #6b7280;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-message-close:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.status-message.success {
+  border-left: 4px solid #22C55E;
+}
+
+.status-message.error {
+  border-left: 4px solid #EF4444;
+}
+
+.status-message.info {
+  border-left: 4px solid #3B82F6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .status-message {
+    width: 95%;
+    padding: 16px;
+  }
+
+  .status-message-content h3 {
+    font-size: 16px;
+  }
+
+  .status-message-content p {
+    font-size: 13px;
+  }
+}

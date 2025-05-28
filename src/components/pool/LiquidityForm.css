@@ -1,0 +1,410 @@
+/* Main container */
+.liquidity-form {
+  background-color: #1a1b23;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+/* Step content */
+.step-content {
+  margin-bottom: 32px;
+}
+
+/* Step header */
+.step-header {
+  margin-bottom: 24px;
+}
+
+.step-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.step-header p {
+  color: #a0a0b0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Token selectors */
+.token-selectors {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.token-selector-wrapper {
+  position: relative;
+}
+
+.token-selector {
+  width: 100%;
+}
+
+.token-selector-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c2d3a;
+  border: 1px solid #3a3b47;
+  border-radius: 12px;
+  padding: 14px 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.token-selector-button:hover {
+  background-color: #32333f;
+  border-color: #4a4b57;
+}
+
+.token-selector-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.token-logo {
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.token-symbol {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Token dropdown */
+.token-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  background-color: #2c2d3a;
+  border-radius: 12px;
+  border: 1px solid #3a3b47;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.token-search {
+  padding: 12px;
+  border-bottom: 1px solid #3a3b47;
+}
+
+.token-search input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #3a3b47;
+  background-color: #1a1b23;
+  color: #fff;
+  font-size: 14px;
+}
+
+.token-search input:focus {
+  outline: none;
+  border-color: #5d5fef;
+}
+
+.token-list {
+  padding: 8px;
+}
+
+.token-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  cursor: pointer;
+  gap: 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.token-item:hover {
+  background-color: #32333f;
+}
+
+.token-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.token-info .token-symbol {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.token-info .token-name {
+  font-size: 12px;
+  color: #a0a0b0;
+}
+
+/* Fee level */
+.fee-level {
+  background-color: #2c2d3a;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.fee-level h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.fee-level p {
+  color: #a0a0b0;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  unicode-bidi: isolate;
+}
+
+/* Continue button */
+.continue-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #5d5fef 0%, #7879ff 100%);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.continue-button:hover {
+  background: linear-gradient(90deg, #4a4cdc 0%, #6566ff 100%);
+  transform: translateY(-1px);
+}
+
+.continue-button:active {
+  transform: translateY(1px);
+}
+
+/* Pair info */
+.pair-info {
+  background-color: #2c2d3a;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.pair-tokens {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.token-icons {
+  position: relative;
+  width: 48px;
+  height: 32px;
+}
+
+.token-icons .token-logo {
+  position: absolute;
+  top: 0;
+  border: 2px solid #2c2d3a;
+}
+
+.token-icons .token-logo.second {
+  left: 16px;
+}
+
+.pair-name {
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fee-badge {
+  background-color: #3a3b47;
+  border-radius: 12px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.market-price {
+  color: #a0a0b0;
+  font-size: 14px;
+}
+
+/* Deposit section */
+.deposit-section {
+  margin-top: 24px;
+}
+
+.deposit-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.deposit-section p {
+  color: #a0a0b0;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.input-container {
+  background-color: #2c2d3a;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.token-amount-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.token-amount-input:focus {
+  outline: none;
+}
+
+.token-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.balance-indicator {
+  color: #a0a0b0;
+  font-size: 12px;
+  text-align: right;
+}
+
+.max-button {
+  background-color: #3a3b47;
+  border: none;
+  border-radius: 8px;
+  color: #5d5fef;
+  font-weight: 600;
+  padding: 10px 16px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.max-button:hover {
+  background-color: #4a4b57;
+}
+
+/* Steps indicator */
+.steps-indicator {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #3a3b47;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #3a3b47;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.step.active .step-number {
+  background-color: #5d5fef;
+}
+
+.step-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.step-description {
+  color: #a0a0b0;
+  font-size: 12px;
+}
+
+/* Additional styles for better UX */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .liquidity-form {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .step-header h2 {
+    font-size: 20px;
+  }
+
+  .token-amount-input {
+    font-size: 20px;
+  }
+
+  .steps-indicator {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

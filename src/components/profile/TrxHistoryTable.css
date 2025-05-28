@@ -1,0 +1,67 @@
+.trx-history-container {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.trx-history-container h2 {
+  margin-bottom: 20px;
+  color: #FFFFFF; /* White text to match the background theme */
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.trx-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1A1A1A; /* Dark gray card background for contrast */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.trx-table th,
+.trx-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #2A2A2A; /* Slightly lighter border for separation */
+  color: #E0E0E0; /* Light gray text for readability */
+  font-size: 14px;
+}
+
+.trx-table th {
+  background-color: #2C2C2C; /* Slightly lighter dark gray for the header */
+  color: #FFFFFF; /* White text for headers */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.trx-table tr:last-child td {
+  border-bottom: none;
+}
+
+.trx-table tr:hover {
+  background-color: #252525; /* Subtle hover effect with a slightly lighter shade */
+  transition: background-color 0.2s ease;
+}
+
+.trx-table a {
+  color: #A855F7; /* Purple to match the theme's accent color */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.trx-table a:hover {
+  text-decoration: underline;
+  color: #C084FC; /* Lighter purple on hover for contrast */
+}
+
+.no-transactions {
+  padding: 20px;
+  text-align: center;
+  background-color: #1A1A1A; /* Matching the table background */
+  border-radius: 12px;
+  color: #A0A0A0; /* Muted gray for the "no transactions" message */
+  font-size: 16px;
+  font-style: italic;
+}

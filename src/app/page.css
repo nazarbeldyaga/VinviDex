@@ -1,0 +1,32 @@
+h1 {
+    margin: 10px;
+}
+
+.widgets {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.uniswap-widget {
+    flex: 0 0 300px;
+    margin-left: 10px;
+}
+
+.chart-widget {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .widgets {
+        flex-direction: column;
+    }
+
+    .uniswap-widget,
+    .chart-widget {
+        width: 100%;
+    }
+}

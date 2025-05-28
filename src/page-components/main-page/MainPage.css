@@ -1,0 +1,35 @@
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-size: 56px;
+    margin: 50px 0 10px !important;
+    color: var(--purple-color);
+}
+
+p {
+    width: 700px;
+    font-size: 24px;
+    color: #ffaeff;
+    text-align: center;
+}
+
+.ticker {
+    height: 72px;
+    background-color: lightgray;
+}
+
+.news {
+    width: 900px;
+    margin: 40px auto;
+    background-color: lightgray;
+}

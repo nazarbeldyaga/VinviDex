@@ -1,0 +1,4 @@
+.chart-container [id^="tradingview_chart"] {
+    width: 100%;
+    height: calc(100vh - 132px) !important;
+}

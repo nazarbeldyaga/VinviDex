@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    padding: 0 30px;
+    background-color: #1A1B23;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__settings .button-disconnect.button {
+    height: 50px !important;
+    background-color: gray !important;
+}
+
+.header__settings .button {
+    background-color: var(--purple-color) !important;
+}
+
+.settings_authorized {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 250px;
+}
+
+.navigation__menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu__link_active {
+    color: var(--purple-color);
+}

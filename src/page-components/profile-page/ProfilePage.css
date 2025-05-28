@@ -1,0 +1,41 @@
+.profile-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.profile-header h1 {
+  margin-bottom: 15px;
+  color: var(--main-font-color);
+}
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.wallet-label {
+  font-weight: 600;
+  color: #ffff;
+}
+
+.wallet-address {
+  font-family: monospace;
+  padding: 5px 10px;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.connect-wallet-message {
+  color: var(--secondary-font-color);
+  font-style: italic;
+}

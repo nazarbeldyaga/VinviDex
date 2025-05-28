@@ -1,0 +1,124 @@
+[
+  {
+    "address": "0x05dcE3b0B7d373E16c0ccd87FF7B44bE1878E7E9",
+    "swaps": [
+      {
+        "timestamp": "2024-11-05T13:23:00Z",
+        "fromToken": "ETH",
+        "toToken": "USDC",
+        "amountIn": "0.5",
+        "amountOut": "980",
+        "txHash": "0x6300c72e6ea3eed7873854294c3ed64a3bf35e020a3930d4c0242c6f4652b2d0"
+      },
+      {
+        "timestamp": "2024-12-10T09:15:00Z",
+        "fromToken": "USDC",
+        "toToken": "DAI",
+        "amountIn": "500",
+        "amountOut": "500",
+        "txHash": "0xa92c2ddc2ea1b5fe937d66340fa75f94e53eaf1e84e27c2bbf3b70f158a2c98d"
+      },
+      {
+        "timestamp": "2025-01-02T17:45:00Z",
+        "fromToken": "ETH",
+        "toToken": "PEPE",
+        "amountIn": "0.2",
+        "amountOut": "1500000",
+        "txHash": "0x1e4b9afde78b72cc45b83a5cfa53768f94aebdfe426fa4c89710c68e37cbbd2a"
+      },
+      {
+        "timestamp": "2025-02-14T12:00:00Z",
+        "fromToken": "DAI",
+        "toToken": "USDT",
+        "amountIn": "300",
+        "amountOut": "299.5",
+        "txHash": "0x0bbf7257ce7d205a442a6fa5fa4ff2d095f5a9b76385f7a99bba39b37c7c85de"
+      },
+      {
+        "timestamp": "2025-03-01T16:30:00Z",
+        "fromToken": "USDT",
+        "toToken": "SHIBA",
+        "amountIn": "100",
+        "amountOut": "400000",
+        "txHash": "0xa40f7df2a1bce12a7e7dfd10cdd676ab4f5a3702edc2ed32a8ce49814c81741c"
+      },
+      {
+        "timestamp": "2025-03-20T11:00:00Z",
+        "fromToken": "PEPE",
+        "toToken": "ETH",
+        "amountIn": "1000000",
+        "amountOut": "0.1",
+        "txHash": "0x7dbcc2e3cdb5ae6cf17b3efbc1f9a897db745f063c213f09831ab44cd4a3125e"
+      },
+      {
+        "timestamp": "2025-04-05T19:10:00Z",
+        "fromToken": "SHIBA",
+        "toToken": "ETH",
+        "amountIn": "200000",
+        "amountOut": "0.08",
+        "txHash": "0x9c50f529e44155c36a19ef0a76218e2bbf5cb6dfbe22b9f26c59e1e8706f3409"
+      }
+    ]
+  },
+  {
+    "address": "0x6009322cc513FE2a9567cf1e50d01cDbc8F3B23b",
+    "swaps": [
+      {
+        "timestamp": "2024-11-05T13:23:00Z",
+        "fromToken": "ETH",
+        "toToken": "USDC",
+        "amountIn": "0.5",
+        "amountOut": "980",
+        "txHash": "0x6300c72e6ea3eed7873854294c3ed64a3bf35e020a3930d4c0242c6f4652b2d0"
+      },
+      {
+        "timestamp": "2024-12-10T09:15:00Z",
+        "fromToken": "USDC",
+        "toToken": "DAI",
+        "amountIn": "500",
+        "amountOut": "500",
+        "txHash": "0xa92c2ddc2ea1b5fe937d66340fa75f94e53eaf1e84e27c2bbf3b70f158a2c98d"
+      },
+      {
+        "timestamp": "2025-01-02T17:45:00Z",
+        "fromToken": "ETH",
+        "toToken": "PEPE",
+        "amountIn": "0.2",
+        "amountOut": "1500000",
+        "txHash": "0x1e4b9afde78b72cc45b83a5cfa53768f94aebdfe426fa4c89710c68e37cbbd2a"
+      },
+      {
+        "timestamp": "2025-02-14T12:00:00Z",
+        "fromToken": "DAI",
+        "toToken": "USDT",
+        "amountIn": "300",
+        "amountOut": "299.5",
+        "txHash": "0x0bbf7257ce7d205a442a6fa5fa4ff2d095f5a9b76385f7a99bba39b37c7c85de"
+      },
+      {
+        "timestamp": "2025-03-01T16:30:00Z",
+        "fromToken": "USDT",
+        "toToken": "SHIBA",
+        "amountIn": "100",
+        "amountOut": "400000",
+        "txHash": "0xa40f7df2a1bce12a7e7dfd10cdd676ab4f5a3702edc2ed32a8ce49814c81741c"
+      },
+      {
+        "timestamp": "2025-03-20T11:00:00Z",
+        "fromToken": "PEPE",
+        "toToken": "ETH",
+        "amountIn": "1000000",
+        "amountOut": "0.1",
+        "txHash": "0x7dbcc2e3cdb5ae6cf17b3efbc1f9a897db745f063c213f09831ab44cd4a3125e"
+      },
+      {
+        "timestamp": "2025-04-05T19:10:00Z",
+        "fromToken": "SHIBA",
+        "toToken": "ETH",
+        "amountIn": "200000",
+        "amountOut": "0.08",
+        "txHash": "0x9c50f529e44155c36a19ef0a76218e2bbf5cb6dfbe22b9f26c59e1e8706f3409"
+      }
+    ]
+  }
+]
